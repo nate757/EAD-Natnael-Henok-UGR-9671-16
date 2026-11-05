@@ -4,7 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- the simplest bean: just "create a Student for me" -->
-    <bean id="student" class="com.craft.Student"></bean>
+    <!-- bean definitions here -->
+    <bean id="student" class="com.craft.stage04.Student">
+        <property name="name" value="John Doe"/>
+        <property name="age" value="20"/>
+        <property name="id" value="101"/>
+    </bean>
 
 </beans>

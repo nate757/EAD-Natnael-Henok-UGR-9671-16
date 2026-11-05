@@ -4,10 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- singleton (default): ONE shared instance -->
-    <bean id="singletonStudent" class="com.craft.Student" scope="singleton"/>
-
-    <!-- prototype: a NEW instance on every getBean() -->
-    <bean id="prototypeStudent" class="com.craft.Student" scope="prototype"/>
+    <!-- Constructor argument name -->
+    <bean id="student" class="com.craft.stage05.Student">
+        <constructor-arg name="id" value="101"/>
+        <constructor-arg name="name" value="John Doe"/>
+        <constructor-arg name="age" value="20"/>
+    </bean>
 
 </beans>
